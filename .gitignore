@@ -10,3 +10,12 @@ secrets.json
 *.pem
 *.key
 Cargo.lock
+
+# Solidity / Foundry artifacts
+*.bin
+*.abi
+contracts/out/
+contracts/cache/
+out/
+cache/
+broadcast/

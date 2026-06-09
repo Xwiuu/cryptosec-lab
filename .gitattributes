@@ -16,6 +16,8 @@ dashboard/** linguist-generated
 **/coverage/** linguist-generated
 **/out/** linguist-generated
 **/cache/** linguist-generated
+*.bin linguist-generated
+*.abi linguist-generated
 
 contracts/**/*.sol linguist-language=Solidity
 core-chain/**/*.rs linguist-language=Rust
