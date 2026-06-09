@@ -1,0 +1,3 @@
+[workspace]
+members = ["core-chain", "vulnerable-chain"]
+resolver = "2"

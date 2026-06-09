@@ -1,0 +1,23 @@
+docs/** linguist-documentation
+audits/** linguist-documentation
+portfolio/** linguist-documentation
+reports/** linguist-documentation
+exploits/**/*.md linguist-documentation
+*.md linguist-documentation
+
+frontend-simulator/** linguist-generated
+dashboard/** linguist-generated
+
+**/node_modules/** linguist-vendored
+**/.next/** linguist-generated
+**/dist/** linguist-generated
+**/build/** linguist-generated
+**/target/** linguist-generated
+**/coverage/** linguist-generated
+**/out/** linguist-generated
+**/cache/** linguist-generated
+
+contracts/**/*.sol linguist-language=Solidity
+core-chain/**/*.rs linguist-language=Rust
+vulnerable-chain/**/*.rs linguist-language=Rust
+scanner/**/*.rs linguist-language=Rust

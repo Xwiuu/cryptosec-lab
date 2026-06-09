@@ -1,0 +1,26 @@
+graph TD
+    subgraph Client System (Demo)
+        A[Front-End Web3 Simulator & Admin Console]
+    end
+
+    subgraph Rust Security Tools
+        B[Scanner CLI - Static Analysis]
+    end
+
+    subgraph Local Simulation Environment
+        C[Core-Chain - Rust PoW/PoS Consensus]
+        D[Foundry Localnet - Anvil Nodes]
+    end
+
+    subgraph Smart Contracts Lab
+        E[Vulnerable Contracts]
+        F[Secure Mitigated Contracts]
+        G[Attack Simulation PoCs]
+    end
+
+    A -->|Monitor & Transact| C
+    A -->|Deploy & Attack| D
+    B -->|Scan Code| E
+    D -->|Simulate Tx| E
+    E -.->|Exploited by| G
+    F -.->|Mitigates| G

@@ -1,0 +1,12 @@
+/target
+**/*.rs.bk
+node_modules
+.env
+*.pdb
+*.db
+*.sqlite
+*.log
+secrets.json
+*.pem
+*.key
+Cargo.lock

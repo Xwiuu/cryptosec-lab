@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #111118;
+  --color-bg-card: #15151f;
+  --color-bg-card-hover: #1a1a2e;
+  --color-bg-elevated: #1e1e32;
+  --color-border-primary: #1e1e30;
+  --color-border-secondary: #2a2a40;
+  --color-border-accent: #3a3a55;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #0a0a0f;
+  --color-accent-green: #22c55e;
+  --color-accent-green-bg: rgba(34, 197, 94, 0.1);
+  --color-accent-blue: #3b82f6;
+  --color-accent-blue-bg: rgba(59, 130, 246, 0.1);
+  --color-accent-amber: #f59e0b;
+  --color-accent-amber-bg: rgba(245, 158, 11, 0.1);
+  --color-accent-red: #ef4444;
+  --color-accent-red-bg: rgba(239, 68, 68, 0.1);
+  --color-accent-purple: #a78bfa;
+  --color-accent-purple-bg: rgba(167, 139, 250, 0.1);
+  --color-accent-cyan: #22d3ee;
+  --color-accent-cyan-bg: rgba(34, 211, 238, 0.1);
+  --color-severity-critical: #ef4444;
+  --color-severity-high: #f97316;
+  --color-severity-medium: #f59e0b;
+  --color-severity-low: #22c55e;
+  --color-severity-info: #3b82f6;
+  --color-sidebar-bg: #0d0d14;
+  --color-sidebar-border: #1a1a2e;
+  --color-sidebar-hover: #151521;
+  --color-sidebar-active: #1a1a30;
+  --color-topbar-bg: rgba(10, 10, 15, 0.85);
+  --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  --font-sans: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.3);
+    color: var(--color-text-primary);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+  }
+  button,
+  a,
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    min-height: 32px;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border-secondary);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-accent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}

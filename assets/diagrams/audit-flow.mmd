@@ -1,0 +1,15 @@
+sequenceDiagram
+    autonumber
+    actor Auditor as Security Auditor
+    participant Admin as Admin Console
+    participant Scanner as Rust Scanner
+    participant Chain as Localnet (Anvil)
+    
+    Auditor->>Admin: Create New Project Engagement
+    Admin->>Scanner: Trigger Static Scan on source paths
+    Scanner-->>Admin: Return Warnings & Found Rules
+    Auditor->>Chain: Run Foundry Fuzz & Exploit Tests
+    Chain-->>Auditor: Return Test Exec Log & Gas Metrics
+    Auditor->>Admin: Record findings in Board (Critical, High, etc.)
+    Auditor->>Admin: Draft Audit Report in Pipeline
+    Auditor->>Admin: Export Final PDF to Client

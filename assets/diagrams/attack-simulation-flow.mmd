@@ -1,0 +1,16 @@
+flowchart TD
+    Start([Start Attack Simulation]) --> Setup[Deploy Vulnerable Contracts to Anvil]
+    Setup --> Attacker[Deploy Attacker / Exploiter Contract]
+    Attacker --> Run[Trigger Exploit Function]
+    
+    subgraph Execution Loop
+        Run --> Callback{Does it trigger callback?}
+        Callback -- Yes --> Reenter[Reenter target view/write method]
+        Reenter --> CheckState{Is balance/price manipulated?}
+        CheckState -- Yes --> Drain[Drain funds / Mint illegal shares]
+        Callback -- No --> DirectDrain[Perform direct asset extraction]
+    end
+    
+    Drain --> Validate[Validate stolen funds in Attacker account]
+    DirectDrain --> Validate
+    Validate --> End([Exploit simulation successful])

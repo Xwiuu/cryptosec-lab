@@ -1,0 +1,221 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/clients",
+      "regex": "^/admin/clients(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/clients(?:/)?$"
+    },
+    {
+      "page": "/admin/findings",
+      "regex": "^/admin/findings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/findings(?:/)?$"
+    },
+    {
+      "page": "/admin/lab-runs",
+      "regex": "^/admin/lab\\-runs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/lab\\-runs(?:/)?$"
+    },
+    {
+      "page": "/admin/overview",
+      "regex": "^/admin/overview(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/overview(?:/)?$"
+    },
+    {
+      "page": "/admin/projects",
+      "regex": "^/admin/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/projects(?:/)?$"
+    },
+    {
+      "page": "/admin/reports",
+      "regex": "^/admin/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/reports(?:/)?$"
+    },
+    {
+      "page": "/admin/scans",
+      "regex": "^/admin/scans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/scans(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/audit",
+      "regex": "^/audit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/audit(?:/)?$"
+    },
+    {
+      "page": "/bridge",
+      "regex": "^/bridge(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bridge(?:/)?$"
+    },
+    {
+      "page": "/chain",
+      "regex": "^/chain(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/chain(?:/)?$"
+    },
+    {
+      "page": "/contracts",
+      "regex": "^/contracts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contracts(?:/)?$"
+    },
+    {
+      "page": "/dao",
+      "regex": "^/dao(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dao(?:/)?$"
+    },
+    {
+      "page": "/defi",
+      "regex": "^/defi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/defi(?:/)?$"
+    },
+    {
+      "page": "/dex",
+      "regex": "^/dex(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dex(?:/)?$"
+    },
+    {
+      "page": "/lending",
+      "regex": "^/lending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lending(?:/)?$"
+    },
+    {
+      "page": "/mempool",
+      "regex": "^/mempool(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mempool(?:/)?$"
+    },
+    {
+      "page": "/mining",
+      "regex": "^/mining(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mining(?:/)?$"
+    },
+    {
+      "page": "/nft",
+      "regex": "^/nft(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nft(?:/)?$"
+    },
+    {
+      "page": "/nodes",
+      "regex": "^/nodes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nodes(?:/)?$"
+    },
+    {
+      "page": "/reports",
+      "regex": "^/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reports(?:/)?$"
+    },
+    {
+      "page": "/scanner",
+      "regex": "^/scanner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/scanner(?:/)?$"
+    },
+    {
+      "page": "/settings",
+      "regex": "^/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings(?:/)?$"
+    },
+    {
+      "page": "/stablecoin",
+      "regex": "^/stablecoin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/stablecoin(?:/)?$"
+    },
+    {
+      "page": "/tokens",
+      "regex": "^/tokens(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tokens(?:/)?$"
+    },
+    {
+      "page": "/vulnerabilities",
+      "regex": "^/vulnerabilities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/vulnerabilities(?:/)?$"
+    },
+    {
+      "page": "/wallet",
+      "regex": "^/wallet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wallet(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,12 @@
+[package]
+name = "vulnerable-chain"
+version = "0.1.0"
+edition = "2021"
+description = "CryptoSec Lab - Vulnerable blockchain implementations for educational demos"
+
+[dependencies]
+sha2 = "0.10"
+sha1 = "0.10"
+md5 = "0.7"
+hex = "0.4"
+rand = "0.8"
