@@ -1,0 +1,12 @@
+title = "CryptoSec Lab Gitleaks Configuration"
+
+[allowlist]
+description = "Initial allowlist scaffold. Keep narrow and justified. Do not allowlist real secrets."
+paths = [
+  '''pentest-results/.*'''
+]
+
+regexes = [
+  '''vm\.envUint\("PRIVATE_KEY"\)''',
+  '''SECRET_KEY_LENGTH'''
+]
