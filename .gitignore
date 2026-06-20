@@ -19,3 +19,6 @@ contracts/cache/
 out/
 cache/
 broadcast/
+
+# Pentest outputs
+pentest-results/
